@@ -1,4 +1,4 @@
-public function testDescriptionExample(): void {
+public function testMarcas(): void {
   global $db;
   $resul = traerMarcas($db);
   
