@@ -1,3 +1,5 @@
+
+$db = null;
 function crearDB() {
 global $db;
 $db = new PDO('sqlite:test', "test", "test");
