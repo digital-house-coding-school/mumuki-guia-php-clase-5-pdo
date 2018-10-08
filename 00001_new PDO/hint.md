@@ -1,3 +1,3 @@
-Para abrir una conexión a base de datos debemos ejecutar `new PDO`
+Para abrir una conexión a base de datos basta con ejecutar `new PDO` enviando los datos correctos.
 
-Lo que devuelve `new PDO` **es lo que debería retornar tu función**.
+El valor de retorno de `new PDO` es lo mismo que debería retornar tu función
