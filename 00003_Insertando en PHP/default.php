@@ -1,0 +1,3 @@
+function insertar(PDO $db) {
+
+}
