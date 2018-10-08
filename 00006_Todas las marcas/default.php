@@ -1,0 +1,3 @@
+function traerMarcas(PDO $db) {
+
+}
