@@ -1,6 +1,6 @@
 public function testInsertFanta(): void {
   global $db;
-  insertar($db, "Fanta");
+  insertarMarca($db, "Fanta");
   
   $query = $db->query("Select * from marcas");
   $marcas = $query->fetchAll();
@@ -16,7 +16,7 @@ public function testInsertFanta(): void {
 
 public function testInsertArcor(): void {
   global $db;
-  insertar($db, "Arcor");
+  insertarMarca($db, "Arcor");
   
   $query = $db->query("Select * from marcas");
   $marcas = $query->fetchAll();
