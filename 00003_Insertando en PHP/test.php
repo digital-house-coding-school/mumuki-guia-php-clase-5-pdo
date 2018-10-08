@@ -1,6 +1,5 @@
 public function testDescriptionExample(): void {
   global $db;
-  crearDB();
   insertar($db);
   $this->assertTrue(true);
 }
