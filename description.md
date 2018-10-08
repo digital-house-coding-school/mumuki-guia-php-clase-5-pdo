@@ -1,0 +1,1 @@
+Clase 5 de PHP en donde veremos la clase PDO e interacciones con bases de datos SQL
