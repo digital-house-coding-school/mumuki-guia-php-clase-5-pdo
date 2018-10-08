@@ -1,0 +1,1 @@
+Recorda que en SQL podes utilizar el operador **LIKE** para escribir una consulta que resuelva nuestro buscador
