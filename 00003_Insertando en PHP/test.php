@@ -2,6 +2,12 @@ public function testDescriptionExample(): void {
   global $db;
   crearDB();
   insertar($db);
-  echo 1;exit;
+  $this->assertTrue(true);
+}
+
+
+public function test2(): void {
+  global $db;
+  insertar($db);
   $this->assertTrue(true);
 }
