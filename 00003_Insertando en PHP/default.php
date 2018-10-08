@@ -1,3 +1,3 @@
-function insertar(PDO $db) {
+function insertarMarca(PDO $db, $nombre) {
 
 }
