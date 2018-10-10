@@ -27,6 +27,8 @@ class MyPDOStatement {
   }
   
   public function bindValue($key, $value, $mode = null) {
+    global $huboBind;
+    $huboBind = true;
     if ($mode === null) {
       return $this->statement->bindValue($key, $value);
     }
@@ -37,6 +39,7 @@ class MyPDOStatement {
 }
 
 $db = null;
+$huboBind = false;
 
 $db = new MyPDO('sqlite:test', "test", "test");
 

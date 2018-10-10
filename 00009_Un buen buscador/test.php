@@ -1,5 +1,7 @@
 public function testBuscar1(): void {
   global $db;
+  global $huboBind;
+  $huboBind = false;
   $_GET = [
     "buscador" => "T"
   ];
@@ -9,10 +11,13 @@ public function testBuscar1(): void {
   $this->assertTrue(is_array($resul), "El resultado deberia ser un array");
   
   $this->assertTrue(count($resul) == 8, "El buscador no esta retornando la cantidad de elementos esperada");
+  $this->assertTrue($huboBind, "Hiciste binding de parametros?");
 }
 
 public function testBuscar2(): void {
   global $db;
+  global $huboBind;
+  $huboBind = false;
   $_GET = [
     "buscador" => "S"
   ];
@@ -22,10 +27,14 @@ public function testBuscar2(): void {
   $this->assertTrue(is_array($resul), "El resultado deberia ser un array");
   
   $this->assertTrue(count($resul) == 11, "El buscador no esta retornando la cantidad de elementos esperada");
+  
+  $this->assertTrue($huboBind, "Hiciste binding de parametros?");
 }
 
 public function testBuscar3(): void {
   global $db;
+  global $huboBind;
+  $huboBind = false;
   $_GET = [
     "buscador" => "R"
   ];
@@ -35,4 +44,5 @@ public function testBuscar3(): void {
   $this->assertTrue(is_array($resul), "El resultado deberia ser un array");
   
   $this->assertTrue(count($resul) == 5, "El buscador no esta retornando la cantidad de elementos esperada");
+  $this->assertTrue($huboBind, "Hiciste binding de parametros?");
 }
