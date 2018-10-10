@@ -19,9 +19,8 @@ public function testInsertarAle(): void {
   
   $query = $db->query("Select * from clientes");
   $clientes = $query->fetchAll();
-  var_dump($clientes);exit;
   
-  $this->assertTrue(count($marcas) == 7, "Parecería que no se insertó ningun cliente...");
+  $this->assertTrue(count($marcas) == 8, "Parecería que no se insertó ningun cliente...");
   
   $last = array_pop($clientes);
   
