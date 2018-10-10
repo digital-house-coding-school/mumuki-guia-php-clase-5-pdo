@@ -1,0 +1,3 @@
+function insertarUsuario(PDO $db) {
+
+}

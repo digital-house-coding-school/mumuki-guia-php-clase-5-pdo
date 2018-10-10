@@ -54,7 +54,7 @@ Para poder registrarse un usuario llena un formulario con las siguientes caracte
 </form>
 ```
 
-Tu desafío entonces es tomar toda la información del formulario e insertarla en la tabla de usuarios.
+Tu desafío entonces es tomar toda la información del formulario e insertarla en la tabla de usuarios **de manera segura**
 
 Cuidado con la fecha de nacimiento ya que recibimos los datos en 3 campos separados y deberías armar un solo dato en formato "YYYY-MM-DD"
 
